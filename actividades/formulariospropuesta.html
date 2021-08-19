@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad Propuesta Formularios</title>
+</head>
+<body>
+    <form action="http://www.example.com/subscribe.php">
+        <fieldset>
+            <legend>Sus datos:</legend>
+            <label>Nombre: <input type="text" name="nombre" /></label><br/>
+            <label>Email: <input type="text" name="email" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Su opinión:</legend>
+            <p>¿Como se enteraron de nosotros?
+            <select name="medios">
+                <option value="google">Google</option>
+                <option value="facebook">Facebook</option>
+                <option value="periodico">Periodico</option>
+                <option value="emisora">Emisora</option>
+                <option value="television">Televisión</option>
+            </select>
+            </p>
+            <p>¿Volvería a visitarnos?
+                <br/>
+                <input type="radio" name="opcion" value="si" /> Si
+                <input type="radio" name="opcion" value="no"/> No
+                <input type="radio" name="opcion" value="quizas"/> Quizás
+            </p>
+            <p>Comentarios:</p>
+            <textarea name="comments" cols="50" rows="5">Ingrese sus comentarios...</textarea>
+            <p><input type="checkbox"/>
+                Inscríbete para actualizaciones por correo electrónico
+                <br/>
+                <input type="submit" value="Submit review"/>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
